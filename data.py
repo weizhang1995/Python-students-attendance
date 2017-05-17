@@ -4,11 +4,11 @@ import re
 
 ## The list2csv function is used to save the list to a csv file.
 ## list2csv函数用来把列表存储为csv文件
-def list2csv(list,file):
+def list2csv(lst,file):
 	str1=','
 	str2='\n'
 	with io.open(file, 'w+', encoding='utf8') as f:
-		for line in list:
+		for line in lst:
 			f.write(str1.join(line) + str2)
 
 ## The csv2list function is used to read the csv file line by line, 
